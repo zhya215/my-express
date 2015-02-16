@@ -24,7 +24,6 @@ require('./mongo/reposView')(app)
 app.get('/', function(req, res) {
     res.render('index.jade')
 })
-app.set('port', (process.env.PORT || 3000))
 var server = app.listen(process.env.PORT || app.get('port'), function() {
 
  	var host = server.address().address
