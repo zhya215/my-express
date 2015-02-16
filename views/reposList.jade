@@ -1,0 +1,7 @@
+extends layout.jade
+
+block content
+    h3 Repos Name
+    each item in repos
+        div.row
+            a(href='/view/repo/' + item.id)= item.name

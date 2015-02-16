@@ -1,0 +1,7 @@
+extends layout.jade
+
+block content
+    h3 Events Type
+    each item in events
+        div.row
+            a(href='/view/event/' + item.id)= item.type+"   "+item.created_at

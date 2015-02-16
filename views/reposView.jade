@@ -1,0 +1,18 @@
+extends layout.jade
+
+block content
+    div.row
+        div.five.columns
+            h5 Repo Name:
+        div.five.columns
+            h5= oneRepo.name
+    div.row
+        div.five.columns
+            h5 Created At
+        div.five.columns
+            h5= oneRepo.created_at
+    div.row
+        div.five.columns
+            h5 Updated At
+        div.five.columns
+            h5= oneRepo.updated_at

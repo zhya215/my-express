@@ -1,0 +1,18 @@
+extends layout.jade
+
+block content
+    div.row
+        div.five.columns
+            h5 Repo Name:
+        div.five.columns
+            h5= oneEvent.repo.name
+    div.row
+        div.five.columns
+            h5 Actor login
+        div.five.columns
+            h5= oneEvent.actor.login
+    div.row
+        div.five.columns
+            h5 Type
+        div.five.columns
+            h5= oneEvent.type
